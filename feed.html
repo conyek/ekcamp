@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,102 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Feed | EKcodecamp </title>
 </head>
+
 <body>
     <header class="header">
-        <a href="feed.html"><img src="images/instaimg.png" /></a>
+        <a href="feed.html">
+            <img src="images/instaimg.png" />
+        </a>
         <form class="header__form">
-            <input type="search" placeholder ="search" class="header__input-search" />
+            <input type="search" placeholder="search" class="header__input-search" />
         </form>
         <ul class="header__list">
-            <li class="header__list-icon"><a href="explore.html" class="header_list-icon-link"> <i class="fa fa-compass" aria-hidden="true"></i> </li>
-            <li class="header__list-icon"><a href="#" class="header_list-icon-link"> <i class="fa fa-heart-o" aria-hidden="true"></i></li>
-            <li class="header__list-icon"><a href="profile.html" class="header_list-icon-link"> <i class="fa fa-user-o" aria-hidden="true"></i> </li>
+            <li class="header__list-icon">
+                <a href="explore.html" class="header_list-icon-link">
+                    <i class="fa fa-compass" aria-hidden="true"></i>
+            </li>
+            <li class="header__list-icon">
+                <a href="#" class="header_list-icon-link">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </li>
+            <li class="header__list-icon">
+                <a href="profile.html" class="header_list-icon-link">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+            </li>
         </ul>
     </header>
-    
-    <span>feed</span>
-    
-    <footer class="footer">
-        <nav class="footer__nav">
-            <ul class="footer__list">
-                <li class ="footer__list-item"><a href="">about us</a></li>
-                <li class ="footer__list-item"><a href="">support</a></li>
-                <li class ="footer__list-item"><a href="">blog</a></li>
-                <li class ="footer__list-item"><a href="">press</a></li>
-                <li class ="footer__list-item"><a href="">api</a></li>
-                <li class ="footer__list-item"><a href="">jobs</a></li>
-                <li class ="footer__list-item"><a href="">privacy</a></li>
-                <li class ="footer__list-item"><a href="">terms</a></li>
-                <li class ="footer__list-item"><a href="">directory</a></li>
-            </ul>
-        </nav>
-        <span class="footer__copyright">©2018 EKcodecamp</span>
-    </footer>
+
+    <main class="feed">
+        <section class="photos">
+            <article class="photo">
+                <header class="photo__header">
+                    <img src="images/avatar.jpg" class="photo__avatar" />
+                    <span class="photo__username">meatseagree</span>
+                    <span calss="photo__place">Chiangmai</span>
+                </header>
+                <img src="images/feedphoto.jpg" class="photo__file" />
+                <div class="photo__feedback">
+                    <div class="photo__actions">
+                        <div class="photo__action-column">
+                            <i class="fa fa-heart-o fa-lg"></i>
+                            <i class="fa fa-comment-o fa-lg"></i>
+                        </div>
+                        <div class="photo__action-column">
+                            <i class="fa fa-bookmark-o fa-lg"></i>
+                        </div>
+                    </div>
+                    <span class="photo__likes">51 likes</span>
+                    <ul class="photo__comments">
+                        <li class="photo__comment">
+                            <span class="photo__comment-author">
+                                EKK
+                            </span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </li>
+                    </ul>
+                    <span class="photo__timestamp">12 hours ago</span>
+                    <div class="photo__make-comment">
+                        <textarea placeholder="Add a comment.."></textarea>
+                        <i class="fa fa-ellipsis-h "></i>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="">about us</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="">support</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="">blog</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="">press</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="">api</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="">jobs</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="">privacy</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="">terms</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="">directory</a>
+                    </li>
+                </ul>
+            </nav>
+            <span class="footer__copyright">©2018 EKcodecamp</span>
+        </footer>
 </body>
+
 </html>
