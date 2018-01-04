@@ -1,44 +1,98 @@
 <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <title>Feed | EKcodecamp </title>
-        </head>
-        <body>
-            <header class="header">
-                <a href="feed.html">
-                    <img src="images/instaimg.png" />
-                </a>
-                <form class="header__form">
-                    <input type="search" placeholder ="search" class="header__input-search" />
-                </form>
-                <ul class="header__list">
-                    <li class="header__list-icon"><a href="explore.html" class="header_list-icon-link"> <i class="fa fa-compass" aria-hidden="true"></i> </li>
-                    <li class="header__list-icon"><a href="#" class="header_list-icon-link"> <i class="fa fa-heart-o" aria-hidden="true"></i></li>
-                    <li class="header__list-icon"><a href="profile.html" class="header_list-icon-link"> <i class="fa fa-user-o" aria-hidden="true"></i> </li>
-                </ul>
-                
-            </header>
-            
-            <span>explore</span>
-            
-            <footer class="footer">
-                <nav class="footer__nav">
-                    <ul class="footer__list">
-                        <li class ="footer__list-item"><a href="">about us</a></li>
-                        <li class ="footer__list-item"><a href="">support</a></li>
-                        <li class ="footer__list-item"><a href="">blog</a></li>
-                        <li class ="footer__list-item"><a href="">press</a></li>
-                        <li class ="footer__list-item"><a href="">api</a></li>
-                        <li class ="footer__list-item"><a href="">jobs</a></li>
-                        <li class ="footer__list-item"><a href="">privacy</a></li>
-                        <li class ="footer__list-item"><a href="">terms</a></li>
-                        <li class ="footer__list-item"><a href="">directory</a></li>
-                    </ul>
-                </nav>
-                <span class="footer__copyright">©2018 EKcodecamp</span>
-            </footer>
-        </body>
-        </html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Explore | EKcodecamp </title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="feed.html">
+            <img src="images/instaimg.png" />
+        </a>
+        <form class="header__form">
+            <input type="search" placeholder="search" class="header__input-search" />
+        </form>
+        <ul class="header__list">
+            <li class="header__list-icon">
+                <a href="explore.html" class="header_list-icon-link">
+                    <i class="fa fa-compass" aria-hidden="true"></i>
+            </li>
+            <li class="header__list-icon">
+                <a href="#" class="header_list-icon-link">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </li>
+            <li class="header__list-icon">
+                <a href="profile.html" class="header_list-icon-link">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+            </li>
+        </ul>
+
+    </header>
+
+    <main class="explore">
+        <span class="explore__suggested">suggested</span>
+        <ul class="explore__userlists">
+            <li class="explore__userlist">
+                <img src="images/userlist-avatar.jpg" class="explore__userlist-avatar" />
+                <div class="explore__userlist-info">
+                    <span class="explore__userlist-id">ted</span>
+                    <span class="explore__userlist-description">TedTalks</span>
+                </div>
+                <div class="explore__userlist-btn">
+                    <button class="explore__userlist-right-follow">Follow</button>
+                </div>
+            </li>
+            <li class="explore__userlist">
+                <img src="images/userlist-avatar.jpg" class="explore__userlist-avatar" />
+                <div class="explore__userlist-info">
+                    <span class="explore__userlist-id">ted</span>
+                    <span class="explore__userlist-description">TedTalks</span>
+                </div>
+                <div class="explore__userlist-btn">
+                    <button class="explore__userlist-right-follow">Follow</button>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <a href="">about us</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">support</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">blog</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">press</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">api</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">jobs</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">privacy</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">terms</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">directory</a>
+                </li>
+            </ul>
+        </nav>
+        <span class="footer__copyright">©2018 EKcodecamp</span>
+    </footer>
+</body>
+
+</html>
