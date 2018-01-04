@@ -1,0 +1,25 @@
+.footer {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0px;
+}
+
+.footer .footer__nav {
+  width: 65%;
+}
+
+.footer .footer__copyright {
+  color: #999;
+}
+
+.footer__nav .footer__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #003569;
+}

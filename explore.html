@@ -5,54 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Explore | EKcodecamp </title>
 </head>
 
 <body>
     <header class="header">
-        <a href="feed.html">
-            <img src="images/instaimg.png" />
-        </a>
-        <form class="header__form">
-            <input type="search" placeholder="search" class="header__input-search" />
-        </form>
-        <ul class="header__list">
-            <li class="header__list-icon">
-                <a href="explore.html" class="header_list-icon-link">
-                    <i class="fa fa-compass" aria-hidden="true"></i>
-            </li>
-            <li class="header__list-icon">
-                <a href="#" class="header_list-icon-link">
-                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-            </li>
-            <li class="header__list-icon">
-                <a href="profile.html" class="header_list-icon-link">
-                    <i class="fa fa-user-o" aria-hidden="true"></i>
-            </li>
-        </ul>
-
+        <div class="header__wrapper">
+            <a href="feed.html">
+                <img class="header__insta" src="images/instaimg.png" />
+            </a>
+            <form class="header__form">
+                <input type="search" placeholder="search" class="header__input-search" />
+            </form>
+            <ul class="header__list">
+                <li class="header__list-icon">
+                    <a href="explore.html" class="header_list-icon-link">
+                        <i class="fa fa-compass fa-lg" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="header__list-icon">
+                    <a href="#" class="header_list-icon-link">
+                        <i class="fa fa-heart-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="header__list-icon">
+                    <a href="profile.html" class="header_list-icon-link">
+                        <i class="fa fa-user-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main class="explore">
         <span class="explore__suggested">suggested</span>
         <ul class="explore__userlists">
             <li class="explore__userlist">
-                <img src="images/userlist-avatar.jpg" class="explore__userlist-avatar" />
-                <div class="explore__userlist-info">
-                    <span class="explore__userlist-id">ted</span>
-                    <span class="explore__userlist-description">TedTalks</span>
+                <div class="explore__col">
+                    <img src="images/userlist-avatar.jpg" class="explore__userlist-avatar" />
+                    <div class="explore__userlist-info">
+                        <span class="explore__userlist-id">ted</span>
+                        <span class="explore__userlist-description">TedTalks</span>
+                    </div>
                 </div>
-                <div class="explore__userlist-btn">
+                <div class="explore__col">
                     <button class="explore__userlist-right-follow">Follow</button>
                 </div>
             </li>
             <li class="explore__userlist">
-                <img src="images/userlist-avatar.jpg" class="explore__userlist-avatar" />
-                <div class="explore__userlist-info">
-                    <span class="explore__userlist-id">ted</span>
-                    <span class="explore__userlist-description">TedTalks</span>
+                <div class="explore__col">
+                    <img src="images/userlist-avatar.jpg" class="explore__userlist-avatar" />
+                    <div class="explore__userlist-info">
+                        <span class="explore__userlist-id">ted</span>
+                        <span class="explore__userlist-description">TedTalks</span>
+                    </div>
                 </div>
-                <div class="explore__userlist-btn">
+                <div class="explore__col">
                     <button class="explore__userlist-right-follow">Follow</button>
                 </div>
             </li>

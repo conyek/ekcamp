@@ -1,0 +1,29 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+}
+
+.header .header__wrapper {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.header__list .header__list-icon {
+  margin-left: 40px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.header__wrapper .header__insta {
+  width: 140px;
+}
