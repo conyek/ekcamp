@@ -3,13 +3,11 @@
   width: 100%;
 }
 
-.explore .explore__userlists {
+.explore .explore__user-list {
   background-color: white;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.09);
-  border-radius: 10px;
-
-  display: flex;
+  border-radius: 3px;
 }
 
 .explore__user-list .explore__user {
@@ -17,12 +15,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
 }
 
 .explore__user-list .explore__user:last-child {
-  border-top: 1px solid rgba(0, 0, 0, 0.09);
+  border: 0;
 }
 
 .explore__user-list .explore__column {

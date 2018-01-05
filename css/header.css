@@ -1,8 +1,8 @@
 .header {
+  background-color: white;
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
   margin-bottom: 30px;
 }
@@ -10,37 +10,37 @@
 .header .header__wrapper {
   width: 960px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.header .header__list {
-  display: flex;
   justify-content: space-between;
   padding: 20px 0;
 }
 
-.header__list .header__list-icon {
-  margin-left: 40px;
+.header__link .header__logo {
+  width: 100px;
+}
+
+.header__wrapper .header__icon-list {
+  display: flex;
+}
+
+.header__icon-list .header__icon {
+  margin-left: 30px;
   color: rgba(0, 0, 0, 0.7);
 }
 
-.header__wrapper .header__insta {
-  width: 140px;
-}
-
-.header__wrapper .header__input-search {
-  width: 220px;
-  height: 30px;
+.header .header__input {
   background-color: #fafafa;
+  border: 0;
+  height: 30px;
+  width: 220px;
   border: 1px solid rgba(0, 0, 0, 0.0975);
   border-radius: 3px;
-  font-size: 14px;
   padding-left: 10px;
+  font-size: 14px;
+  font-weight: 300;
 }
 
-.header__wrapper .header__input-search:hover,
-.header__wrapper .header__input-search:focus {
+.header .header__input:focus {
   outline: none;
   background-color: white;
 }

@@ -1,31 +1,39 @@
-.photos {
-  width: 70%;
+.feed {
+  max-width: 600px;
+  width: 100%;
+}
+
+.photo {
+  width: 100%;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.09);
+  margin-bottom: 60px;
+  border-radius: 3px;
+}
+
+.photo:last-child {
+  margin-bottom: 0;
 }
 
 .photo .photo__header {
-  height: 60px;
+  padding: 13px;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 
 .photo__header .photo__avatar {
+  width: 40px;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  margin: 15px;
+  margin-right: 15px;
 }
 
-.photo__header-info .photo__username {
+.photo__info .photo__owner {
   display: block;
   font-weight: 600;
-  font-size: 12px;
+  margin-bottom: 5px;
 }
 
-.photo__header-info .photo__place {
-  font-weight: 400;
+.photo__info .photo__place {
   font-size: 12px;
 }
 
@@ -33,69 +41,63 @@
   width: 100%;
 }
 
+.photo .photo__feedback {
+  padding: 15px 15px 20px 15px;
+}
+
 .photo__feedback .photo__actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.photo__action-column i:first-child {
+  margin-right: 20px;
+}
+
+.photo__action-column i {
+  font-size: 180%;
+}
+
+.photo__feedback .photo__likes,
+.photo__feedback .photo__timestamp {
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.photo__feedback .photo__comments,
+.photo__comments .photo__comment {
+  margin-bottom: 10px;
+}
+
+.photo__comment .photo__comment-author {
+  font-weight: 600;
+}
+
+.photo__feedback .photo__timestamp {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #999;
+}
+
+.photo__feedback .photo__make-comment {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  width: 100%;
+  padding-top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.photo__action-column {
-  padding-left: 15px;
-  padding-top: 15px;
-  padding-right: 15px;
-}
-
-.photo__bottom {
-  padding: 15px 20px;
-}
-
-.photo__bottom .photo__likes {
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.photo__bottom .photo__comment {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: 14px;
-}
-
-.photo__comment-author {
-  font-weight: 600;
-  font-size: 12px;
-}
-
-.photo__bottom .photo__timestamp {
-  color: #999;
-  font-size: 10px;
-  text-transform: uppercase;
-}
-
-.photo__make-comment {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.09);
-  margin-top: 15px;
-  padding-top: 15px;
-  color: #999;
-}
-
 .photo__make-comment textarea {
+  width: 95%;
+  max-height: 20px;
+  border: 0;
   resize: none;
-  width: 90%;
-  border-color: white;
-  margin-right: 30px;
-  color: #999;
   font-size: 14px;
-  padding-top: 5px;
 }
 
-.photo__make-comment textarea:active,
 .photo__make-comment textarea:focus {
   outline: none;
-}
-
-.photo__action-column .fa {
-  margin-right: 10px;
 }
