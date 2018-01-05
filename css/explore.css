@@ -27,10 +27,23 @@
   align-items: center;
 }
 
+@keyframes rotate {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
 .explore__column .explore__avatar {
   height: 55px;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.explore__column .explore__avatar:hover {
+  animation: rotate 0.5s ease-in infinite;
 }
 
 .explore__info .explore__username {
